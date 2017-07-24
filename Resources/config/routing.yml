@@ -1,0 +1,25 @@
+core_article_view:
+    path:     /article/view/{id}
+    defaults: 
+        _controller: CoreArticleBundle:Article:view
+    requirements:
+        id: \d
+        
+core_article_create:
+    path:     /article/create/
+    defaults: 
+        _controller: CoreArticleBundle:Article:create
+        
+core_article_edit:
+    path:     /article/edit/{id}
+    defaults: 
+        _controller: CoreArticleBundle:Article:edit
+    requirements:
+        id: \d
+        
+core_article_delete:
+    path:     /article/delete/{id}
+    defaults: 
+        _controller: CoreArticleBundle:Article:delete
+    requirements:
+        id: \d
